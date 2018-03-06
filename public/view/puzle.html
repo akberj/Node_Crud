@@ -1,0 +1,81 @@
+
+
+<form >
+<label class="textpuz">type "yes" to see me.</label>
+<input class="text md-whiteframe-14dp " type="text" ng-model="inputc" max="10"  /> 
+
+<span class="{{inputc.indexOf('yes') === 0 ? 'visible' : 'notvisible'}}"  style= "color:{{color}};" >  Here I am! Now Choose color:
+
+ <md-input-container flex="20">
+         
+          <md-select name="type" type='text' ng-model="color">
+            <md-option value="orange">Orange</md-option>
+            <md-option value="grey">Grey</md-option>
+           <md-option value="purple">Purple</md-option> 
+           <md-option value="blue">Blue</md-option>
+           <md-option value="yellow">Yellow</md-option>
+           
+          </md-select>
+        </md-input-container>
+</span>
+</form>
+<br>
+<br>
+</div>
+<div class="row" >
+
+
+
+
+<div id="draggable2" class="card col-md-4 md-whiteframe-14dp ui-widget-content" style="background: grey; color: white; margin:0px 20px 20px; padding-bottom: 10px"> <h2 class="text" >GAME SETUP</h2>
+<form><label class ="text">please input your name</label>
+<input class="text md-whiteframe-14dp" type="text" ng-model="name">
+</form>
+
+</div>
+
+<span id="draggable3" style="width: 60%;">
+<div class= "card col-md-8 md-whiteframe-14dp" style="background:{{solved ? 'lightgreen': 'red';}};color: black; margin:0px 0px 0px 0px;" ng-if="name.length >= 3 && name != ''"> <h2>Puzzle is | {{solved ? 'Solved': 'Not Solved'}} </h2>
+<form>
+
+ <md-input-container flex="50">
+<label>Swith 1     :</label>
+<md-select  ng-model="switch1"> 
+<md-option value="0">(0)</md-option>
+  <md-option value="1">(1)</md-option>
+   </md-select>
+</md-input-container >
+<md-input-container>
+<label>Swith 2:</label>
+<md-select  ng-model="switch2"  > 
+<md-option value="0">(0)</md-option>
+  <md-option value="1">(1)</md-option>
+   </md-select>
+</md-input-container>
+<br>
+<md-input-container>
+<label>Swith 3:</label>
+<md-select  ng-model="switch3"  > 
+<md-option value="0">(0)</md-option>
+  <md-option value="1">(1)</md-option>
+   </md-select>
+</md-input-container>
+
+<md-input-container >
+<label>Swith 4:</label>
+<md-select  ng-model="switch4"  > 
+<md-option value="0" >(0)</md-option>
+  <md-option value="1">(1)</md-option>
+   </md-select>
+</md-input-container>
+
+</form>
+<span ng-if= "switch1 == switchr1 && switch2 == switchr2 && switch3 == switchr3 && switch4 == switchr4 ? solved = true : solved = false " > <h2>Congradulation {{name}} you just solved the Puzzle!</h2> <md-button ng-click="restart()">Restart</md-button></span>
+
+</div>
+
+</span>
+
+</div>
+
+ 

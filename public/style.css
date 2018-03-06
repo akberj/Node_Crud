@@ -1,0 +1,179 @@
+/* Put your css in here */
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+.well-nav{
+  border-color: purple;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  font-size: 1em;
+}
+
+.ui-draggable, .ui-droppable {
+  background-position: top;
+}
+
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
+.text {
+   text-shadow: 6px 7px 8px #000;
+   text-align: -webkit-center;
+}
+}
+.boxpuz {
+   box-shadow: 3px 3px 5px grey;
+}
+
+.textpuz {
+   text-shadow: 6px 7px 8px darkred;
+}
+
+
+ng\:form {
+  display: block;
+}
+
+.red
+{
+  color:red;
+}
+.blue
+{
+  color:blue;
+}
+.green
+{
+  color:green;
+}
+.purple
+{
+  color:purple;
+}
+.notvisible
+{
+  opacity:0;
+}
+.carddemoBasicUsage .card-media {
+  background-color: #999999; }
+
+  .md-headline {
+
+    font-size: 30px;
+    font-style: italic;
+    color: silver;
+  }
+
+  .card-content{
+
+       font-family: sans-serif;
+    font-stretch: semi-condensed;
+    filter: opacity(0.6);
+    font-size: 40px;
+   
+    font-style: oblique;
+    font-variant: all-petite-caps;
+  }
+  .md-sub{
+    font-size: 38px;
+    
+  }
+.ng-animate-block-transitions {
+  transition:0s all!important;
+  -webkit-transition:0s all!important;
+}
+
+/* show the element during a show/hide animation when the
+ * animation is ongoing, but the .ng-hide class is active */
+.ng-hide-add-active, .ng-hide-remove {
+  display: block!important;
+}
+
+/**
+ * angular-ui-notification - Angular.js service providing simple notifications using Bootstrap 3 styles with css transitions for animating
+ * @author Alex_Crack
+ * @version v0.1.0
+ * @link https://github.com/alexcrack/angular-ui-notification
+ * @license MIT
+ */
+.ui-notification
+{
+    position: fixed;
+    z-index: 9999;
+
+    width: 300px;
+
+    cursor: pointer;
+    -webkit-transition: all ease .5s;
+         -o-transition: all ease .5s;
+            transition: all ease .5s;
+
+    color: #fff;
+    border-radius: 0;
+    background: #337ab7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+.ui-notification.killed
+{
+    -webkit-transition: opacity ease 1s;
+         -o-transition: opacity ease 1s;
+            transition: opacity ease 1s;
+
+    opacity: 0;
+}
+.ui-notification > h3
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    display: block;
+
+    margin: 10px 10px 0 10px;
+    padding: 0 0 5px 0;
+
+    text-align: left;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.ui-notification a
+{
+    color: #fff;
+}
+.ui-notification a:hover
+{
+    text-decoration: underline;
+}
+.ui-notification > .message
+{
+    margin: 10px 10px 10px 10px;
+}
+.ui-notification.warning
+{
+    color: #fff;
+    background: #f0ad4e;
+}
+.ui-notification.error
+{
+    color: #fff;
+    background: #d9534f;
+}
+.ui-notification.success
+{
+    color: #fff;
+    background: #5cb85c;
+}
+.ui-notification.info
+{
+    color: #fff;
+    background: #5bc0de;
+}
+.ui-notification:hover
+{
+    opacity: .7;
+}

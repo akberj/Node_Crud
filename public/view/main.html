@@ -1,0 +1,41 @@
+
+
+
+
+ <input type="text" ng-model="search">
+
+<div class="row"  style=" padding: 0px;margin:  0px ; ">
+	
+
+
+ <div  class="drag col-md-6 " ng-repeat="user in users | filter:search" style="padding: 0px;">
+
+   <md-card md-theme="{{color}}"  md-theme-watch class="card md-whiteframe-14dp ">
+      
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline ">[{{user.title}}] {{id}} <p align="right">{{user.author}}</p></span>
+          </md-card-title-text>
+         
+        </md-card-title>
+
+        
+          <md-card-content > <p class= 'card-content' style="word-wrap: break-word;"> {{user.body}} </p>
+          </md-card-content>
+        
+        
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-primary md-raised" ng-click="showAdvanced(user._id)">update</md-button>
+          <md-button class="md-warn md-raised" ng-click="deluser(user._id)">Delete</md-button>
+        </md-card-actions>
+        </md-card>
+
+
+
+
+ 
+</div>
+
+
+</div>
+

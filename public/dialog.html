@@ -1,0 +1,43 @@
+<md-dialog aria-label="Mango (Fruit)">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Article [ {{article.title}} ]</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+       <form>
+
+       <div id="form-group">
+       <label>Title:</label>
+       <input class="form-control" type="text" ng-model="title" ></div>
+       <div id="form-group"><label>Author:</label>
+       <input class="form-control" ng-model="author" type="text" name="{{article.author}}"></div>
+
+       <div id="form-group"><label>Body:</label>
+
+       <textarea class="form-control" ng-model="body" value="{{article.body}}">{{article.body}}</textarea>
+       <br></div>
+      
+      
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      
+      <span flex></span>
+      <md-button ng-click="answer(article._id)" class="md-primary md-raised">
+       Update Article
+      </md-button>
+      <md-button ng-click="cancel()" class="md-default md-raised">
+        Cencel
+      </md-button>
+    </md-dialog-actions>
+  </form>
+  </div>
+</md-dialog>
